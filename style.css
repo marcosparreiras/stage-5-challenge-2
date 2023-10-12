@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: clamp(40%, 1vw + 2%, 65.2%);
+    --bg-color: hsl(0, 0%, 100%);
+    --text-color: hsl(240, 6%, 21%);
+    --btn-bg-color: hsl(240, 9%, 89%);
+    --active-bg-color: hsl(194, 97%, 31%);
+    --active-text-color: hsl(0, 0%, 100%);
+}
+
+html.running .ph-play-circle,
+html:not(.running) .ph-pause-circle {
+    display: none;
+}
+
+button {
+    color: var(--text-color);
+    border: 0;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+#app {
+    height: 100vh;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+#timer-display span {
+    color: var(--text-color);
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 12.6rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+#timer-controls {
+    display: flex;
+    gap: 4rem;
+}
+
+#timer-controls button {
+    background-color: transparent;
+    font-size: 4.8rem;
+}
+
+#audio-section {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 3.2rem;
+}
+
+#audio-section button {
+    color: var(--text-color);
+    background-color: var(--btn-bg-color);
+    border-radius: 2.4rem;
+    width: 13.8rem;
+    height: 15.2rem;
+    font-size: 5rem;
+}
+
+#audio-section button.active {
+    color: var(--active-text-color);
+    background-color: var(--active-bg-color);
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style.css" />
+        <script type="module" src="./app.js" defer></script>
+        <script src="https://unpkg.com/@phosphor-icons/web"></script>
+        <title>FocusTimer</title>
+    </head>
+    <body>
+        <div id="app">
+            <section id="timer-section">
+                <div id="timer-display">
+                    <span id="timer-minutes">00</span>
+                    <span>:</span>
+                    <span id="timer-seconds">00</span>
+                </div>
+                <div id="timer-controls">
+                    <button
+                        data-action="play"
+                        class="ph ph-play-circle"
+                    ></button>
+                    <button
+                        data-action="pause"
+                        class="ph ph-pause-circle"
+                    ></button>
+                    <button
+                        data-action="reset"
+                        class="ph ph-stop-circle"
+                    ></button>
+                    <button
+                        data-action="plus"
+                        class="ph ph-plus-circle"
+                    ></button>
+                    <button
+                        data-action="minus"
+                        class="ph ph-minus-circle"
+                    ></button>
+                </div>
+            </section>
+            <section id="audio-section">
+                <button data-audio="tree" class="ph ph-tree"></button>
+                <button data-audio="rain" class="ph ph-cloud-rain"></button>
+                <button data-audio="store" class="ph ph-storefront"></button>
+                <button data-audio="fire" class="ph ph-fire"></button>
+            </section>
+        </div>
+    </body>
+</html>
